@@ -1,1 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 220 20% 14%;
+    --foreground: 0 0% 100%;
+    --card: 220 20% 14%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 20% 14%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 84% 49%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 24%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 20% 24%;
+    --muted-foreground: 220 20% 80%;
+    --accent: 220 20% 24%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 49%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 24%;
+    --input: 220 20% 24%;
+    --ring: 0 84% 49%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  *{
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 /* You can add global styles to this file, and also import other style files */
+.movie-card {
+  @apply relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105;
+}
+
+.movie-card img {
+  @apply w-full h-full object-cover;
+}
+
+.movie-card-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300;
+}
+
+.movie-card:hover .movie-card-overlay {
+  @apply opacity-100;
+}
+
+.movie-card-content {
+  @apply absolute bottom-0 left-0 right-0 p-4 transform translate-y-full transition-transform duration-300;
+}
+
+.movie-card:hover .movie-card-content {
+  @apply translate-y-0;
+}

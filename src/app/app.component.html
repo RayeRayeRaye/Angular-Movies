@@ -1,2 +1,20 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<div class="relative min-h-screen"> 
+    <!-- Navbar  -->
+     <app-navbar></app-navbar>
+    <main>
+        <!-- App hero  -->
+        <app-hero [movie]="heroMovie()!" ></app-hero>
+        <div class="pb-20"> </div>
+        <router-outlet></router-outlet>        
+    </main>
+
+    <!-- TODO add button go to  -->
+    <button (click)="goTop()" class="fixed p-3 text-white transition-all duration-300  shadow-2xl shadow-red-500 bg-netflix-red bottom-8 right-8 hov:bg-netflix-red-dark border-2 border-white"
+        [class.opacity-0]="!showButton" [class.opacity-100]="showButton">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+    </button>
+
+ </div>
+ 

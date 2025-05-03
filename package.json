@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "dev": "nx serve",
     "build": "nx build",
     "test": "nx test"
   },
@@ -39,10 +39,13 @@
     "@swc/helpers": "~0.5.11",
     "@typescript-eslint/utils": "^8.19.0",
     "angular-eslint": "^19.2.0",
+    "autoprefixer": "^10.4.0",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
     "nx": "20.8.1",
+    "postcss": "^8.4.5",
     "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.2",
     "tslib": "^2.3.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.19.0"
