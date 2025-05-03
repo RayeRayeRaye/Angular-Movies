@@ -1,4 +1,7 @@
 # Movies
+![image](https://github.com/user-attachments/assets/f5f12e5a-406b-4a5b-bbc4-602bd7c81fc6)
+![image](https://github.com/user-attachments/assets/a220e8a1-2886-43bf-a4ac-14f32002b108)
+
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
